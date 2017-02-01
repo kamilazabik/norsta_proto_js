@@ -1,0 +1,171 @@
+nav.navbar.no-margin.navbar-fixed-top
+  // Brand and toggle get grouped for better mobile display
+  .navbar-header.fixed-brand
+    button#menu-toggle.navbar-toggle.collapsed(type='button', data-toggle='collapse'  )
+      span.glyphicon.glyphicon-forward(aria-hidden='true')
+    a#logo.navbar-brand(href='#')
+      img(alt='Brand', src='images/argevide_logo.png')
+    button#main-menu.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-navbar-collapse-2', aria-expanded='false')
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+  // navbar-header
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    ul.nav.navbar-nav
+      li.active
+        button#menu-toggle-2.navbar-toggle.collapse.in(data-toggle='collapse')
+          span.glyphicon.glyphicon-forward(aria-hidden='true')
+    // navbar-header
+  #bs-navbar-collapse-2.collapse.navbar-collapse
+    ul.nav.navbar-nav
+
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Projekty
+          span.caret
+        ul.dropdown-menu
+          li
+            a(href='#') Uzytkownicy
+          li
+            a(href='#') Zmiany
+
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Widok
+          span.caret
+        ul.dropdown-menu
+          li
+            a(href='#') Odśwież
+          li
+            a(href='#') Rozwiń
+          li
+            a(href='#') Zwiń
+          li
+            a(href='#') Otwórz dowód
+          li.divider(role='separator')
+          li
+            a(href='#') Panel
+          li
+            a(href='#') Filtr
+          li
+            a(href='#') Stan z dnia
+          li
+            a(href='#') Szukaj
+          li.divider(role='separator')
+          li
+            a(href='#') Ocena
+          li
+            a(href='#') Porównaj oceny
+
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Raporty
+          span.caret
+        ul.dropdown-menu
+          li
+            a(href='#') Zrzut ekranu
+          li
+            a(href='#') Lista zmian
+          li.divider(role='separator')
+          li
+            a(href='#') Raport XML/HTML
+          li
+            a(href='#') Arkusz ocen
+          li.divider(role='separator')
+          li
+            a(href='#') Metryki projektu
+          li
+            a(href='#') Lista odwołań
+          li
+            a(href='#') Lista dowodów
+          li
+            a(href='#') Raport argumentu
+          //li
+          //  a(href='#') Separated link
+          li.divider(role='separator')
+          li
+            a(href='#') Lista ocen
+    ul.nav.navbar-nav.navbar-right
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Jan Kowalski
+          span.caret
+        ul.dropdown-menu
+          li#profile
+            a(href='#myProfile' data-target="#myProfile" data-toggle="modal") Profil
+          li.divider(role='separator')
+          li
+            a(href='login-site.html') Wyloguj
+    button.btn.btn-primary.pull-right(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample', name='search')
+      span.glyphicon.glyphicon-search(aria-hidden='true')
+
+
+
+
+// /.navbar-collapse
+// /.container-fluid
+
+
+//
+//nav.navbar.navbar-default
+//
+//    // Brand and toggle get grouped for better mobile display
+//    .navbar-header
+//      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+//        span.sr-only Toggle navigation
+//        span.icon-bar
+//        span.icon-bar
+//        span.icon-bar
+//      a.navbar-brand(href='#') Brand
+//    // Collect the nav links, forms, and other content for toggling
+//    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+//      ul.nav.navbar-nav
+//        li.active
+//          a(href='#')
+//            | Link
+//            span.sr-only (current)
+//        li
+//          a(href='#') Link
+//        li.dropdown
+//          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+//            | Dropdown
+//            span.caret
+//          ul.dropdown-menu
+//            li
+//              a(href='#') Action
+//            li
+//              a(href='#') Another action
+//            li
+//              a(href='#') Something else here
+//            li.divider(role='separator')
+//            li
+//              a(href='#') Separated link
+//            li.divider(role='separator')
+//            li
+//              a(href='#') One more separated link
+//      form.navbar-form.navbar-left
+//        .form-group
+//          input.form-control(type='text', placeholder='Search')
+//        button.btn.btn-default(type='submit') Submit
+//      ul.nav.navbar-nav.navbar-right
+//        li
+//          a(href='#') Link
+//        li.dropdown
+//          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+//            | Dropdown
+//            span.caret
+//          ul.dropdown-menu
+//            li
+//              a(href='#') Action
+//            li
+//              a(href='#') Another action
+//            li
+//              a(href='#') Something else here
+//            li.divider(role='separator')
+//            li
+//              a(href='#') Separated link
+//            li
+//              a(href='#') Action
+//            li
+//              a(href='#') Action
+//            li
+//              a(href='#') Action
+//    // /.navbar-collapse
+//  // /.container-fluid

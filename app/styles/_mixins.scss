@@ -1,0 +1,163 @@
+$pie-size-big: 60px;
+$pie-size-md: 40px;
+$pie-size-sx: 30px;
+//$panels-color: #2d689f;
+//$panels-head: #1A6D9C;
+//$sidebar-color: #002132;
+//$content: #D1D4D5;
+//$panels-content: #f5f8ff;
+
+//$panels-head: #497EB1;
+$panels-head: #3387c8;
+$label: rgb(84, 166, 230);
+//$label: #F8C957;
+//$sidebar-color: #2E3440;
+$sidebar-color: #34495E;
+$content: #D0D3D9;
+$panels-head-border: 1px solid #3387c8;
+$panels-content: #F7FAFD;
+$panels-border: 1px solid #dedede;
+$color-shadow1: rgba(0,0,0,.2);
+$color-shadow2: rgba(0,0,0,.14);
+$color-shadow3: rgba(0,0,0,.12);
+$panels-shadow: 0 1px 3px 0 $color-shadow1,0 1px 1px 0 $color-shadow2,0 2px 1px -1px $color-shadow3, 0 -1px 1px 0 $color-shadow3;
+$sidebar-max: 400px;
+$sidebar-md: 350px;
+$color-black: #000;
+$right-panels-shadow: 0 2px 2px 0 $color-shadow2, 0px 3px 1px -2px $color-shadow1, 0px 1px 5px 0px $color-shadow3;
+$xs-panel-height: 40px;
+
+// Generate the large columns
+
+@mixin font-size ($font-size){
+  font-size: $font-size;
+}
+
+@mixin height-background ($height, $background){
+  height: $height;
+  background-color: $background;
+}
+
+@mixin back-color($background, $color, $overflow){
+  background-color: $background;
+  color: $color;
+  overflow: $overflow;
+}
+
+@mixin font($font-weight, $line-height){
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin border-top-bottom($border){
+  border-top: $border;
+  border-bottom: $border;
+}
+
+@mixin border-right($color, $size){
+  border-right: $color;
+  border-top-right-radius: $size;
+  border-bottom-right-radius: $size;
+  transition-property: border-bottom-right-radius;
+  transition-duration:1s;
+}
+
+@mixin border-left($size){
+  border-top-left-radius: $size;
+  border-bottom-left-radius: $size;
+  transition-property: border-bottom-left-radius;
+  transition-duration:1s;
+}
+
+
+
+@mixin panel-heading($content, $position, $right, $top, $font, $transition, $transform){
+  content: $content;
+  position: $position;
+  right: $right;
+  top: $top;
+  font-size: $font ;
+  transition: $transition;
+  transform: $transform;
+}
+
+@mixin padding-left-right($left, $right){
+  padding-left: $left;
+  padding-right:  $right;
+}
+
+
+@mixin tr-size($th1,$th2, $th3, $th4, $th5){
+  th:nth-child(1){
+    width: $th1;
+  }
+  th:nth-child(2){
+    width: $th2;
+  }
+  th:nth-child(3){
+    width: $th3;
+  }
+  th:nth-child(4){
+    width: $th4;
+  }
+  th:nth-child(5){
+    width: $th5;
+  }
+}
+
+@mixin td-size($td1,$td2, $td3, $td4, $td5){
+  td:nth-child(1){
+    width: $td1;
+  }
+  td:nth-child(2){
+    width: $td2;
+  }
+  td:nth-child(3){
+    width: $td3;
+  }
+  td:nth-child(4){
+    width: $td4;
+  }
+  td:nth-child(5){
+    width: $td5;
+  }
+}
+
+@mixin vendor-prefixes($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+}
+//
+//@mixin border-radius($tl, $tr, $br, $bl){
+//  border-radius:$tl, $tr, $br, $bl;
+//  @include vendor-prefixes(border-radius, $tl, $tr, $br, $bl);
+//}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  @include vendor-prefixes(border-radius, $radius);
+}
+
+//$panels-head: #007BA9;
+//$sidebar-color: #001F2B;
+//$content: #D1D1D1;
+//$panels-content: #F7FAFD;
+
+@mixin background-border($background,$px, $border){
+  background-color: $background;
+  border: $px solid $border;
+}
+
+@mixin transition(){
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
